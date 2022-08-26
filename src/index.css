@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerTitle {
+  display: flex;
+  justify-content: start;
+  color: blue;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+
+.representativesLink {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: .5px solid grey;
+  padding: .2rem;
+}
+
+.senatorsLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: .5px solid grey;
+  padding: .2rem;
+}
+
+
+.representativeList {
+  display: flex;
+  justify-content: center;
+  width: 25rem;
+  border-bottom: 1px black solid;
+  margin-left: 5rem;
+}
+
+.representativeParty {
+  margin-left: 5rem;
+}
+
+.representativesHeader {
+  margin-right: 76rem;
+}
+
+.representativesListHeader {
+  display: flex;
+  width: 25rem;
+  margin-left: 5rem;
+  background-color: lightgray;
+}
+
+.representativesNameHeader {
+  margin-left: 4rem;
+  margin-right: 7rem;
+}
+
+.senatorsList {
+  display: flex;
+  justify-content: center;
+  width: 25rem;
+  border-bottom: 1px black solid;
+  margin-left: 5rem;
+}
+
+.senatorsHeader {
+  margin-right: 83rem;
+}
+
+.senatorsListHeader {
+  display: flex;
+  width: 25rem;
+  margin-left: 5rem;
+  background-color: lightgray;
+}
+
+.senatorsNameHeader {
+  margin-left: 4rem;
+  margin-right: 7rem;
+}
+
+.dropDown {
+  display: flex;
+}

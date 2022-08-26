@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Representatives from './Representative/Representatives';
+import {  BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Senators from './components/Senators';
+import Header from './components/Header';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Header/>
+        <Routes>
+          <Route path ='/representatives/:state' element={<Representatives/>}/>
+          <Route path ='/senators/:state' element={<Senators/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
